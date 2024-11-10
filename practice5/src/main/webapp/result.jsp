@@ -1,18 +1,44 @@
 <%@ include file="header.jsp" %>
 
-<h2>Form Results</h2>
-<%
-  String name = request.getParameter("name");
-  String surname = request.getParameter("surname");
-  String sport = request.getParameter("sport");
-  String dish = request.getParameter("dish");
-  String color = request.getParameter("color");
+<h2>Results</h2>
 
-  out.println("<p>First Name: " + name + "</p>");
-  out.println("<p>Last Name: " + surname + "</p>");
-  out.println("<p>Favorite Sport: " + sport + "</p>");
-  out.println("<p>Favorite Dish: " + dish + "</p>");
-  out.println("<p>Favorite Color: " + color + "</p>");
+<p><strong>First Name:</strong> ${param.name}</p>
+<p><strong>Last Name:</strong> ${param.surname}</p>
+
+<p><strong>Favorite Sports:</strong></p>
+<%
+  String[] sports = request.getParameterValues("sport");
+  if (sports != null) {
+    for (String sport : sports) {
+      out.println("<p>" + sport + "</p>");
+    }
+  } else {
+    out.println("<p>No favorite sport selected.</p>");
+  }
+%>
+
+<p><strong>Favorite Dishes:</strong></p>
+<%
+  String[] dishes = request.getParameterValues("dish");
+  if (dishes != null) {
+    for (String dish : dishes) {
+      out.println("<p>" + dish + "</p>");
+    }
+  } else {
+    out.println("<p>No favorite dish selected.</p>");
+  }
+%>
+
+<p><strong>Favorite Colors:</strong></p>
+<%
+  String[] colors = request.getParameterValues("color");
+  if (colors != null) {
+    for (String color : colors) {
+      out.println("<p>" + color + "</p>");
+    }
+  } else {
+    out.println("<p>No favorite color selected.</p>");
+  }
 %>
 
 <%@ include file="footer.jsp" %>

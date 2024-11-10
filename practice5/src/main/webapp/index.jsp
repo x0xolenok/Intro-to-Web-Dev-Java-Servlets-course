@@ -6,32 +6,29 @@
   <label>First Name: <input type="text" name="name" required /></label><br><br>
   <label>Last Name: <input type="text" name="surname" required /></label><br><br>
 
-  <!-- Favorite Sport (single selection with radio buttons) -->
+  <!-- Favorite Sport (multiple selection with checkboxes) -->
   <label>Favorite Sport:</label><br>
-  <input type="radio" name="sport" value="Football" required> Football<br>
-  <input type="radio" name="sport" value="Basketball" required> Basketball<br>
-  <input type="radio" name="sport" value="Tennis" required> Tennis<br>
-  <input type="radio" name="sport" value="Swimming" required> Swimming<br>
-  <input type="radio" name="sport" value="Running" required> Running<br><br>
+  <input type="checkbox" name="sport" value="Football"> Football<br>
+  <input type="checkbox" name="sport" value="Basketball"> Basketball<br>
+  <input type="checkbox" name="sport" value="Tennis"> Tennis<br>
+  <input type="checkbox" name="sport" value="Swimming"> Swimming<br>
+  <input type="checkbox" name="sport" value="Running"> Running<br><br>
 
-
-  <!-- Favorite Dish (single selection with radio buttons) -->
+  <!-- Favorite Dish (multiple selection with checkboxes) -->
   <label>Favorite Dish:</label><br>
-  <input type="radio" name="dish" value="Pizza" required> Pizza<br>
-  <input type="radio" name="dish" value="Sushi" required> Sushi<br>
-  <input type="radio" name="dish" value="Burger" required> Burger<br>
-  <input type="radio" name="dish" value="Pasta" required> Pasta<br>
-  <input type="radio" name="dish" value="Salad" required> Salad<br><br>
+  <input type="checkbox" name="dish" value="Pizza"> Pizza<br>
+  <input type="checkbox" name="dish" value="Sushi"> Sushi<br>
+  <input type="checkbox" name="dish" value="Burger"> Burger<br>
+  <input type="checkbox" name="dish" value="Pasta"> Pasta<br>
+  <input type="checkbox" name="dish" value="Salad"> Salad<br><br>
 
-
-  <!-- Favorite Color (single selection with radio buttons) -->
+  <!-- Favorite Color (multiple selection with checkboxes) -->
   <label>Favorite Color:</label><br>
-  <input type="radio" name="color" value="Red" required> Red<br>
-  <input type="radio" name="color" value="Blue" required> Blue<br>
-  <input type="radio" name="color" value="Green" required> Green<br>
-  <input type="radio" name="color" value="Yellow" required> Yellow<br>
-  <input type="radio" name="color" value="Purple" required> Purple<br><br>
-
+  <input type="checkbox" name="color" value="Red"> Red<br>
+  <input type="checkbox" name="color" value="Blue"> Blue<br>
+  <input type="checkbox" name="color" value="Green"> Green<br>
+  <input type="checkbox" name="color" value="Yellow"> Yellow<br>
+  <input type="checkbox" name="color" value="Purple"> Purple<br><br>
 
   <button type="submit">Submit</button>
 </form>
