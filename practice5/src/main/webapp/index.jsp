@@ -1,6 +1,6 @@
 <%@ include file="header.jsp" %>
 
-<h2>Favorite Things Form</h2>
+<h2>Favourite Things Form</h2>
 <form action="result.jsp" method="post">
   <!-- Name and surname with required fields -->
   <label>First Name: <input type="text" name="name" required /></label><br><br>
