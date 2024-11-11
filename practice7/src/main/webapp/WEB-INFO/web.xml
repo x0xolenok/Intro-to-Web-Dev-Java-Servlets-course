@@ -1,0 +1,11 @@
+<filter>
+    <filter-name>AuthoFilter</filter-name>
+    <filter-class>com.example.practice7.AuthoFilter</filter-class>
+</filter>
+
+<filter-mapping>
+<filter-name>AuthoFilter</filter-name>
+<url-pattern>/index.jsp</url-pattern>  <!-- Додаємо всі сторінки, до яких потрібна авторизація -->
+<url-pattern>/profile.jsp</url-pattern>
+<!-- додайте інші сторінки тут -->
+</filter-mapping>
