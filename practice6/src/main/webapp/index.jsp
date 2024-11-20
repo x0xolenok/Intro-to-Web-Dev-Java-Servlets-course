@@ -18,6 +18,7 @@
 <c:set var="userLoggedIn" value="true" />
 <c:set var="role" value="admin" />
 
+
 <c:if test="${userLoggedIn}">
   <p>You are logged in as a user.</p>
 </c:if>

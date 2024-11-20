@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <!-- Налаштування кастомних тегів -->
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://www.swimshop.com/tags</taglib-uri>
+            <taglib-location>/WEB-INF/productsTags.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+    <!-- Фільтр для перевірки авторизації -->
+    <filter>
+        <filter-name>AuthoFilter</filter-name>
+        <filter-class>org.example.individual_1_2.AuthoFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthoFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- Фільтр для перевірки сесії -->
+    <filter>
+        <filter-name>SessionValidationFilter</filter-name>
+        <filter-class>org.example.individual_1_2.SessionValidationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SessionValidationFilter</filter-name>
+        <url-pattern>/protected/*</url-pattern>
+    </filter-mapping>
+
+    <!-- Фільтр для підключення до бази даних -->
+    <filter>
+        <filter-name>FilterDB</filter-name>
+        <filter-class>org.example.individual_1_2.FilterDB</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterDB</filter-name>
+        <url-pattern>/protected/*</url-pattern>
+    </filter-mapping>
+
+</web-app>
