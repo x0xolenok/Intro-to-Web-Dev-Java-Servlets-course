@@ -13,7 +13,10 @@
         </taglib>
     </jsp-config>
 
-    <!-- Фільтр для перевірки авторизації -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
     <filter>
         <filter-name>AuthoFilter</filter-name>
         <filter-class>org.example.individual.AuthoFilter</filter-class>
@@ -23,15 +26,6 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <!-- Фільтр для перевірки сесії -->
-    <filter>
-        <filter-name>SessionValidationFilter</filter-name>
-        <filter-class>org.example.individual.SessionValidationFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>SessionValidationFilter</filter-name>
-        <url-pattern>/protected/*</url-pattern>
-    </filter-mapping>
 
     <!-- Фільтр для підключення до бази даних -->
     <filter>

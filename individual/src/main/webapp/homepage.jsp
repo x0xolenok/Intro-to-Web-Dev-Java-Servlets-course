@@ -18,17 +18,7 @@
   <p>You are not logged in. <a href="login">Login here</a> or <a href="register">Register here</a>.</p>
 </c:if>
 
-<h2>Featured Products</h2>
-
-<!-- Список продуктів з товарами для плавання -->
-<ul>
-  <li><a href="product?id=1">Swimming Goggles</a> - High quality goggles for your swim.</li>
-  <li><a href="product?id=2">Swim Caps</a> - Comfortable and stylish swim caps.</li>
-  <li><a href="product?id=3">Flotation Devices</a> - Perfect for safety in the pool.</li>
-  <li><a href="product?id=4">Swimming Shorts</a> - Comfortable shorts for your swim.</li>
-</ul>
-
-<p><a href="products">Browse All Products</a></p>
+<h2> <a href="products"> Our products </a> </h2>
 
 <footer>
   <p>&copy; 2024 Swimming Store</p>
