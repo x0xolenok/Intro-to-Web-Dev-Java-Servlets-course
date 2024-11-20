@@ -18,13 +18,8 @@
   <button type="submit">Login</button>
 </form>
 
-<!-- Якщо є помилка, то вивести повідомлення -->
-<c:if test="${param.error != null}">
-  <p style="color:red;">Invalid username or password. Please try again.</p>
-</c:if>
-
 <!-- Посилання на сторінку реєстрації -->
-<p>Don't have an account? <a href="register">Register here</a></p>
+<p>Don't have an account? <a href="register.jsp">Register here</a></p>
 
 </body>
 </html>

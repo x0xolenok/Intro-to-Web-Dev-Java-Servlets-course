@@ -18,11 +18,6 @@
   <button type="submit">Register</button>
 </form>
 
-<!-- Якщо є помилка, показуємо повідомлення -->
-<c:if test="${param.error != null}">
-  <p style="color:red;">Error: ${param.error}</p>
-</c:if>
-
 <!-- Посилання на сторінку входу, якщо користувач уже має акаунт -->
 <p>Already have an account? <a href="login">Login here</a></p>
 

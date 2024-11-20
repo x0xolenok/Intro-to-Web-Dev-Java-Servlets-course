@@ -6,17 +6,7 @@
 </head>
 <body>
 <h1>Welcome to the Swimming Store</h1>
-
-<!-- Вітання користувача, якщо він авторизований -->
-<c:if test="${not empty sessionScope.user}">
-  <p>Welcome, ${sessionScope.user}!</p>
-  <p><a href="logout">Logout</a></p>
-</c:if>
-
-<!-- Якщо користувач не авторизований, пропонуємо увійти -->
-<c:if test="${empty sessionScope.user}">
-  <p>You are not logged in. <a href="login">Login here</a> or <a href="register">Register here</a>.</p>
-</c:if>
+<a href="<%= request.getContextPath() %>/logout">Logout</a>
 
 <h2> <a href="products"> Our products </a> </h2>
 

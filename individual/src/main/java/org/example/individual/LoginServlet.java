@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
         User user = new User(username, password);
         try {
             if (UserDB.validateUser(user)) {
-                HttpSession session = request.getSession();
+                HttpSession session = request.getSession(true);
                 session.setAttribute("user", user.getUsername());
                 response.sendRedirect("/homepage.jsp");
             } else {

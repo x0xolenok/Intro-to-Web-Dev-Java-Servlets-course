@@ -22,7 +22,10 @@ public class ProductListTag extends TagSupport {
                 for (Product product : products) {
                     String editUrl = "editProduct?id=" + product.getId();
                     pageContext.getOut().write("<li>");
-                    pageContext.getOut().write("<a href=\"" + editUrl + "\">" + product.getName() + " - " + product.getBrand() + "</a>");
+                    pageContext.getOut().write("<h3>" + product.getName() + " " + product.getBrand() +  " </h3>");
+                    pageContext.getOut().write("<h3>Price: " + product.getPrice() + " </h3>" );
+                    pageContext.getOut().write("<p>Description: " + product.getDescription() + " </p>" );
+                    pageContext.getOut().write("<a href=\"" + editUrl + "\">" + "Edit" + "</a>");
                     pageContext.getOut().write("</li>");
                 }
                 pageContext.getOut().write("</ul>");

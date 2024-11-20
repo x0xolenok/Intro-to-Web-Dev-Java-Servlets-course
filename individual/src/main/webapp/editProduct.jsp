@@ -1,6 +1,7 @@
 <%@ page import="org.example.individual.Product" %>
 <%@ page import="java.util.List" %>
 
+<jsp:useBean id="product" scope="request" type="org.example.individual.Product" />
 
 <html>
 <head>
@@ -14,6 +15,9 @@
 
   <label for="name">Product Name:</label>
   <input type="text" id="name" name="name" value="${product.name}" required />
+  <br/>
+  <label for="brand">Brand:</label>
+  <input type="text" id="brand" name="brand" value="${product.brand}" required />
   <br/>
   <label for="price">Price (USD):</label>
   <input type="number" id="price" name="price" value="${product.price}" required />

@@ -3,6 +3,8 @@
 <%@ taglib uri="jakarta.tags.functions" prefix="fn" %>
 <%@ taglib uri="http://www.swimshop.com/tags" prefix="product" %>
 
+<jsp:useBean id="productList" scope="request" type="java.util.List"/>
+
 <html>
 <head>
   <title>Product List</title>
@@ -11,10 +13,13 @@
 <a href="<%= request.getContextPath() %>/logout">Logout</a>
 
 <h2>Add a New Product</h2>
-<form action="${pageContext.request.contextPath}/products" method="POST">
+<form action="products" method="POST">
   <label for="name">Product Name:</label>
   <input type="text" id="name" name="name" required />
   <br>
+  <label for="brand">Brand:</label>
+  <input type="text" id="brand" name="brand" required />
+  <br/>
   <label for="price">Price (USD):</label>
   <input type="number" id="price" name="price" required />
   <br>
@@ -26,5 +31,6 @@
 
 <h2>Available Products</h2>
 <product:productInfo products="${productList}" />
+
 </body>
 </html>
