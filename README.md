@@ -13,4 +13,12 @@ The purpose of teaching the course is to familiarise you with the existing *J2EE
 - use authentication and authorisation methods in web applications
 - use databases to store information and be able to transfer data between a web application and a database.
 
+# Technology stack
 
+<div>
+  <img height="64" width="64" src="https://upload.wikimedia.org/wikipedia/commons/8/81/Jakarta_ee_logo_schooner_color_stacked_default.svg" alt="Jakarta EE" />
+  
+  <img height="64" width="64" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="JavaServlet" />
+
+  <img height="64" width="64" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" />
+</div>
